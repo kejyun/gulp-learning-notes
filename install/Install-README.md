@@ -31,7 +31,7 @@ gulp.task('default', function () {
 ```
 gulp 可以將每一個你要執行的工作做命名，而預設會運行 `default` 的工作，所以我們先使用預設的工作進行 gulp 程式的測試，然後再專案的根目錄執行 `gulp` 指令：
 
-```
+```shell
 ~/Code/gulp-project$ gulp
 [22:26:31] Using gulpfile ~/Code/gulp-project/gulpfile.js
 [22:26:31] Starting 'default'...

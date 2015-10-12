@@ -72,3 +72,4 @@ $ gulp watch
 ## 參考資料
 * [gulp-uglify](https://www.npmjs.com/package/gulp-uglify/)
 * [Learning Gulp #2 - Using Plugins & Minifying JavaScript](https://www.youtube.com/watch?v=Kh4eYdd8O4w&list=PLhIIfyPeWUjoySSdufaqfaSLeQDmCCY3Q)
+* [gulp.watch 監看](../../start/Start-Watch.md)

@@ -20,3 +20,4 @@
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [教學影片](resource/Resource-Learning-Video.md)
+  * [文章](resource/Resource-Learning-Article.md)

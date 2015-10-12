@@ -11,7 +11,7 @@ $ npm install -g gulp
 ## 在要套用 gulp 的專案下安裝 gulp 套件
 
 ```shell
-~/Code/gulp-project$ npm install gulp
+~/Code/gulp-project$ npm install --save-dev gulp
 ```
 
 ## 在專案下的根目錄建立 `gulpfile.js`

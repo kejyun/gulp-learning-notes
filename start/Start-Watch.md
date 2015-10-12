@@ -78,3 +78,6 @@ $ gulp
 [19:15:25] Finished 'default' after 17 μs
 [19:15:25] Starting 'scripts'...
 ```
+
+## 參考資料
+* [Learning Gulp #4 - Watching Files With Gulp](https://www.youtube.com/watch?v=0luuGcoLnxM&index=4&list=PLhIIfyPeWUjoySSdufaqfaSLeQDmCCY3Q)

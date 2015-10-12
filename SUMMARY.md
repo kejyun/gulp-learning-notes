@@ -16,6 +16,7 @@
   * [工具](plguins/Tool/Plugins-Tool-README.md)
     * [【gulp-plumber】例外處理](plguins/Tool/Plugins-Tool-gulp-plumber.md)
     * [【gulp-livereload】自動重新載入頁面](plguins/Tool/Plugins-Tool-gulp-livereload.md)
+    * [【gulp-notify】gulp 處理通知](plguins/Tool/Plugins-Tool-gulp-notify.md)
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [教學影片](resource/Resource-Learning-Video.md)

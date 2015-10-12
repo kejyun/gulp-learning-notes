@@ -80,4 +80,4 @@ $ gulp
 ```
 
 ## 參考資料
-* [Learning Gulp #4 - Watching Files With Gulp](https://www.youtube.com/watch?v=0luuGcoLnxM&index=4&list=PLhIIfyPeWUjoySSdufaqfaSLeQDmCCY3Q)
+* [Learning Gulp #4 - Watching Files With Gulp](https://www.youtube.com/watch?v=0luuGcoLnxM&index=4&list=PLLnpHn493BHE2RsdyUNpbiVn-cfuV7Fos)

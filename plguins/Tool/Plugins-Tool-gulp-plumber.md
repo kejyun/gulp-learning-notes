@@ -104,5 +104,5 @@ Details:
 ```
 
 ## 參考資料
-* [Learning Gulp #6 - Keep Gulp Running With Plumber](https://www.youtube.com/watch?v=rF6niaDKcxE&index=6&list=PLhIIfyPeWUjoySSdufaqfaSLeQDmCCY3Q)
+* [Learning Gulp #6 - Keep Gulp Running With Plumber](https://www.youtube.com/watch?v=rF6niaDKcxE&list=PLLnpHn493BHE2RsdyUNpbiVn-cfuV7Fos&index=6)
 * [gulp-plumber](https://www.npmjs.com/package/gulp-plumber/)

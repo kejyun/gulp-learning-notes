@@ -78,3 +78,6 @@ Hello Gulp Scripts Task
 [18:54:40] Starting 'default'...
 [18:54:40] Finished 'default' after 9.42 μs
 ```
+
+## 參考資料
+* [Learning Gulp #3 - Named Tasks](https://www.youtube.com/watch?v=YBGeJnMrzzE&index=3&list=PLLnpHn493BHE2RsdyUNpbiVn-cfuV7Fos)

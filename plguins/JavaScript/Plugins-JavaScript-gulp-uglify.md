@@ -71,5 +71,5 @@ $ gulp watch
 
 ## 參考資料
 * [gulp-uglify](https://www.npmjs.com/package/gulp-uglify/)
-* [Learning Gulp #2 - Using Plugins & Minifying JavaScript](https://www.youtube.com/watch?v=Kh4eYdd8O4w&list=PLhIIfyPeWUjoySSdufaqfaSLeQDmCCY3Q)
+* [Learning Gulp #2 - Using Plugins & Minifying JavaScript](https://www.youtube.com/watch?v=Kh4eYdd8O4w&index=2&list=PLLnpHn493BHE2RsdyUNpbiVn-cfuV7Fos)
 * [gulp.watch 監看](../../start/Start-Watch.md)

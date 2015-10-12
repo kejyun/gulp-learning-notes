@@ -103,4 +103,4 @@ gulp.task('styles', function () {
 ```
 
 ## 參考資料
-* [Learning Gulp #7 - Handling Errors Without Plumber](https://www.youtube.com/watch?v=o24f4imRbxQ&list=PLhIIfyPeWUjoySSdufaqfaSLeQDmCCY3Q&index=7)
+* [Learning Gulp #7 - Handling Errors Without Plumber](https://www.youtube.com/watch?v=o24f4imRbxQ&list=PLLnpHn493BHE2RsdyUNpbiVn-cfuV7Fos&index=7)

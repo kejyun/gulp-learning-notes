@@ -43,4 +43,4 @@ hi~hi~hi~~~
 
 
 ## 參考資料
-* [Learning Gulp #1 - Installing & Introducing Gulp](https://www.youtube.com/watch?v=wNlEK8qrb0M&list=PLLnpHn493BHE2RsdyUNpbiVn-cfuV7Fos&index=1)
+* [Learning Gulp #1 - Installing & Introducing Gulp](https://www.youtube.com/watch?v=wNlEK8qrb0M&index=1&list=PLLnpHn493BHE2RsdyUNpbiVn-cfuV7Fos)

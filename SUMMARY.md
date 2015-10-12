@@ -10,6 +10,8 @@
     * [【gulp-uglify】最小化 JavaScript](plguins/JavaScript/Plugins-JavaScript-gulp-uglify.md)
   * [CSS](plguins/CSS/Plugins-CSS-README.md)
     * [【gulp-sass】編譯 sass/scss 檔案](plguins/CSS/Plugins-CSS-gulp-sass.md)
+  * [工具](plguins/Tool/Plugins-Tool-README.md)
+    * [【gulp-plumber】例外處理](plguins/Tool/Plugins-Tool-gulp-plumber.md)
 * [學習資源](resource/Resource-README.md)
   * [官方](resource/Resource-Official.md)
   * [教學影片](resource/Resource-Learning-Video.md)

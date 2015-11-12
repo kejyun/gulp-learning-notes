@@ -1,0 +1,641 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>【gulp-livereload】自動重新載入頁面 | gulp 學習筆記</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../../plguins/Tool/Plugins-Tool-gulp-notify.html" />
+    
+    
+    <link rel="prev" href="../../plguins/Tool/Plugins-Tool-gulp-plumber.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="3.4.2" data-basepath="../.." data-revision="Fri Nov 13 2015 06:57:14 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="install/Install-README.html">
+            
+                
+                    <a href="../../install/Install-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        安裝 gulp
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="start/Start-README.html">
+            
+                
+                    <a href="../../start/Start-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        開始
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="start/Start-Task.html">
+            
+                
+                    <a href="../../start/Start-Task.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        工作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="start/Start-Watch.html">
+            
+                
+                    <a href="../../start/Start-Watch.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        監看
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="start/Start-Exception.html">
+            
+                
+                    <a href="../../start/Start-Exception.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        例外處理
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="plguins/Plugins-README.html">
+            
+                
+                    <a href="../../plguins/Plugins-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        套件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="plguins/JavaScript/Plugins-JavaScript-README.html">
+            
+                
+                    <a href="../../plguins/JavaScript/Plugins-JavaScript-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        JavaScript
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="plguins/JavaScript/Plugins-JavaScript-gulp-uglify.html">
+            
+                
+                    <a href="../../plguins/JavaScript/Plugins-JavaScript-gulp-uglify.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        【gulp-uglify】最小化 JavaScript
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="plguins/CSS/Plugins-CSS-README.html">
+            
+                
+                    <a href="../../plguins/CSS/Plugins-CSS-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        CSS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="plguins/CSS/Plugins-CSS-gulp-sass.html">
+            
+                
+                    <a href="../../plguins/CSS/Plugins-CSS-gulp-sass.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.1.</b>
+                        
+                        【gulp-sass】編譯 sass/scss 檔案
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="plguins/CSS/Plugins-CSS-gulp-compass.html">
+            
+                
+                    <a href="../../plguins/CSS/Plugins-CSS-gulp-compass.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        【gulp-compass】編譯 sass/scss 檔案
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="plguins/File/Plugins-File-README.html">
+            
+                
+                    <a href="../../plguins/File/Plugins-File-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        檔案
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="plguins/File/Plugins-File-gulp-imagemin.html">
+            
+                
+                    <a href="../../plguins/File/Plugins-File-gulp-imagemin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.1.</b>
+                        
+                        【gulp-imagemin】壓縮圖片
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="plguins/Tool/Plugins-Tool-README.html">
+            
+                
+                    <a href="../../plguins/Tool/Plugins-Tool-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        工具
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="plguins/Tool/Plugins-Tool-gulp-plumber.html">
+            
+                
+                    <a href="../../plguins/Tool/Plugins-Tool-gulp-plumber.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                        【gulp-plumber】例外處理
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4.2" data-path="plguins/Tool/Plugins-Tool-gulp-livereload.html">
+            
+                
+                    <a href="../../plguins/Tool/Plugins-Tool-gulp-livereload.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.2.</b>
+                        
+                        【gulp-livereload】自動重新載入頁面
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="plguins/Tool/Plugins-Tool-gulp-notify.html">
+            
+                
+                    <a href="../../plguins/Tool/Plugins-Tool-gulp-notify.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.3.</b>
+                        
+                        【gulp-notify】gulp 處理通知
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="plguins/Tool/Plugins-Tool-browser-sync.html">
+            
+                
+                    <a href="../../plguins/Tool/Plugins-Tool-browser-sync.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.4.</b>
+                        
+                        【browser-sync】瀏覽器同步檢視
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="resource/Resource-README.html">
+            
+                
+                    <a href="../../resource/Resource-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        學習資源
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="resource/Resource-Official.html">
+            
+                
+                    <a href="../../resource/Resource-Official.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        官方
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="resource/Resource-Learning-Video.html">
+            
+                
+                    <a href="../../resource/Resource-Learning-Video.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        教學影片
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="resource/Resource-Learning-Article.html">
+            
+                
+                    <a href="../../resource/Resource-Learning-Article.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        文章
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >gulp 學習筆記</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="gulp-livereload">gulp-livereload</h1>
+<blockquote>
+<p>&#x7576; HTML, CSS &#x6216; JavaScript &#x7570;&#x52D5;&#x6642;&#xFF0C;&#x81EA;&#x52D5;&#x91CD;&#x65B0;&#x8F09;&#x5165;&#x9801;&#x9762;</p>
+</blockquote>
+<h2 id="%E5%89%8D%E8%A8%80">&#x524D;&#x8A00;</h2>
+<p>&#x7576;&#x6211;&#x5011;&#x7570;&#x52D5; HTML, CSS &#x6216; JavaScript &#x6A94;&#x6848;&#x6642;&#xFF0C;&#x6211;&#x5011;&#x901A;&#x5E38;&#x8981;&#x5230;&#x9801;&#x9762;&#x91CD;&#x65B0;&#x6574;&#x7406;&#x624D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x65B0;&#x7684;&#x7D50;&#x679C;&#xFF0C;&#x800C; livereload &#x5957;&#x4EF6;&#x53EF;&#x4EE5;&#x81EA;&#x52D5;&#x5E6B;&#x6211;&#x5011;&#x5B8C;&#x6210; <code>&#x91CD;&#x65B0;&#x6574;&#x7406;</code> &#x9019;&#x500B;&#x52D5;&#x4F5C;</p>
+<h2 id="%E5%AE%89%E8%A3%9D">&#x5B89;&#x88DD;</h2>
+<pre><code class="lang-shell">$ npm install --save-dev gulp-livereload
+</code></pre>
+<h2 id="%E4%BD%BF%E7%94%A8-livereload">&#x4F7F;&#x7528; livereload</h2>
+<p>&#x6211;&#x5011;&#x5728; gulp watch &#x7684;&#x6642;&#x5019;&#xFF0C;&#x555F;&#x52D5; Livereload server&#xFF0C;&#x4E26;&#x5728; CSS &#x6216; JavaScript &#x7570;&#x52D5;&#x6642;&#xFF0C;&#x4F7F;&#x7528; <code>pipe(gulpLivereload())</code> &#x81EA;&#x52D5;&#x91CD;&#x65B0;&#x8F09;&#x5165;&#x9801;&#x9762;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp&apos;</span>),               <span class="hljs-comment">// &#x8F09;&#x5165; gulp</span>
+    gulpUglify = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp-uglify&apos;</span>),  <span class="hljs-comment">// &#x8F09;&#x5165; gulp-uglify</span>
+    gulpSass = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp-sass&apos;</span>),      <span class="hljs-comment">// &#x8F09;&#x5165; gulp-sass</span>
+    gulpPlumber = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp-plumber&apos;</span>),<span class="hljs-comment">// &#x8F09;&#x5165; gulp-plumber</span>
+    gulpLivereload = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp-livereload&apos;</span>);  <span class="hljs-comment">// &#x8F09;&#x5165; gulp-livereload</span>
+
+gulp.task(<span class="hljs-string">&apos;watch&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    gulpLivereload.listen();
+    gulp.watch(<span class="hljs-string">&apos;javascript/original/*.js&apos;</span>, [<span class="hljs-string">&apos;scripts&apos;</span>]);
+    gulp.watch(<span class="hljs-string">&apos;scss/**/*.scss&apos;</span>, [<span class="hljs-string">&apos;styles&apos;</span>]);
+});
+
+gulp.task(<span class="hljs-string">&apos;script&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    gulp.src(<span class="hljs-string">&apos;javascript/original/*.js&apos;</span>)        <span class="hljs-comment">// &#x6307;&#x5B9A;&#x8981;&#x8655;&#x7406;&#x7684;&#x539F;&#x59CB; JavaScript &#x6A94;&#x6848;&#x76EE;&#x9304;</span>
+        .pipe(gulpPlumber())                    <span class="hljs-comment">// &#x4F7F;&#x7528; gulp-plumber &#x8655;&#x7406;&#x4F8B;&#x5916;</span>
+        .pipe(gulpUglify())                     <span class="hljs-comment">// &#x5C07; JavaScript &#x505A;&#x6700;&#x5C0F;&#x5316;</span>
+        .pipe(gulp.dest(<span class="hljs-string">&apos;javascript/minify&apos;</span>)),  <span class="hljs-comment">// &#x6307;&#x5B9A;&#x6700;&#x5C0F;&#x5316;&#x5F8C;&#x7684; JavaScript &#x6A94;&#x6848;&#x76EE;&#x9304;</span>
+        .pipe(gulpLivereload());                <span class="hljs-comment">// &#x7576;&#x6A94;&#x6848;&#x7570;&#x52D5;&#x5F8C;&#x81EA;&#x52D5;&#x91CD;&#x65B0;&#x8F09;&#x5165;&#x9801;&#x9762;</span>
+});
+
+gulp.task(<span class="hljs-string">&apos;styles&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    gulp.src(<span class="hljs-string">&apos;scss/**/*.scss&apos;</span>)    <span class="hljs-comment">// &#x6307;&#x5B9A;&#x8981;&#x8655;&#x7406;&#x7684; Scss &#x6A94;&#x6848;&#x76EE;&#x9304;</span>
+        .pipe(gulpPlumber())      <span class="hljs-comment">// &#x4F7F;&#x7528; gulp-plumber &#x8655;&#x7406;&#x4F8B;&#x5916;</span>
+        .pipe(gulpSass({          <span class="hljs-comment">// &#x7DE8;&#x8B6F; Scss</span>
+            outputStyle: <span class="hljs-string">&apos;compressed&apos;</span>
+        }))
+        .pipe(gulp.dest(<span class="hljs-string">&apos;css&apos;</span>)).  <span class="hljs-comment">// &#x6307;&#x5B9A;&#x7DE8;&#x8B6F;&#x5F8C;&#x7684; css &#x6A94;&#x6848;&#x76EE;&#x9304;</span>
+        .pipe(gulpLivereload());  <span class="hljs-comment">// &#x7576;&#x6A94;&#x6848;&#x7570;&#x52D5;&#x5F8C;&#x81EA;&#x52D5;&#x91CD;&#x65B0;&#x8F09;&#x5165;&#x9801;&#x9762;</span>
+});
+</code></pre>
+<h2 id="%E9%96%8B%E5%95%9F-gulp-watch-%E5%8F%8A-livereload-server">&#x958B;&#x555F; gulp watch &#x53CA; livereload server</h2>
+<pre><code class="lang-shell">$ gulp watch
+[22:08:31] Using gulpfile ~/Code/italkjob/gulpfile.js
+[22:08:31] Starting &apos;watch&apos;...
+[22:08:31] Finished &apos;watch&apos; after 23 ms
+[22:08:31] Starting &apos;default&apos;...
+[22:08:31] Finished &apos;default&apos; after 22 &#x3BC;s
+[22:08:31] /Users/kejyun/Project/css/test.css reloaded.
+[22:08:31] /Users/kejyun/Project/javascript/minify/test.js reloaded.
+</code></pre>
+<h2 id="%E5%AE%89%E8%A3%9D-chrome-livereload-%E5%A5%97%E4%BB%B6">&#x5B89;&#x88DD; Chrome Livereload &#x5957;&#x4EF6;</h2>
+<p>&#x6211;&#x5011;&#x958B;&#x555F; Chrome &#x5B89;&#x88DD;<a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=zh-TW" target="_blank">Livereload Chrome &#x5957;&#x4EF6;</a>&#xFF0C;&#x4E4B;&#x5F8C;&#x6703;&#x5728;&#x700F;&#x89BD;&#x5668;&#x7684;&#x53F3;&#x4E0A;&#x89D2;&#x770B;&#x5230; Livereload &#x5957;&#x4EF6;&#x7684;&#x5716;&#x793A;&#xFF0C;&#x793A;&#x610F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="images/chrome-livereload-off-icon.png" alt="Chrome Livereload &#x5716;&#x793A;(&#x95DC;&#x9589;)"></p>
+<p>&#x4E4B;&#x5F8C;&#x6211;&#x5011;&#x9EDE;&#x9078;&#x6B64; icon&#xFF0C;&#x6703;&#x770B;&#x5230;&#x4E2D;&#x9593;&#x7A7A;&#x5FC3;&#x5713;&#x8B8A;&#x6210;&#x5BE6;&#x5FC3;&#x5713;&#xFF0C;&#x9019;&#x6A23;&#x7684;&#x8A71;&#x8868;&#x793A;&#x958B;&#x555F;&#x6210;&#x529F;</p>
+<p><img src="images/chrome-livereload-on-icon.png" alt="Chrome Livereload &#x5716;&#x793A;(&#x958B;&#x555F;)"></p>
+<p>&#x4E4B;&#x5F8C;&#x6211;&#x5011;&#x7570;&#x52D5;&#x4EFB;&#x4F55;&#x7684; CSS &#x6216; JavaScript&#xFF0C;&#x700F;&#x89BD;&#x5668;&#x5C31;&#x53EF;&#x4EE5;&#x5E6B;&#x6211;&#x5011;&#x81EA;&#x52D5;&#x91CD;&#x65B0;&#x8F09;&#x5165;&#x645F;&#xFF0C;Enjoy it&#xFF5E;</p>
+<h2 id="%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/gulp-livereload/" target="_blank">gulp-livereload</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=zh-TW" target="_blank">Livereload Chrome &#x5957;&#x4EF6;</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../plguins/Tool/Plugins-Tool-gulp-plumber.html" class="navigation navigation-prev " aria-label="Previous page: 【gulp-plumber】例外處理"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../plguins/Tool/Plugins-Tool-gulp-notify.html" class="navigation navigation-next " aria-label="Next page: 【gulp-notify】gulp 處理通知"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

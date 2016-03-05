@@ -22,7 +22,7 @@ gulp.task('styles', function () {
             css: 'public/assets/css',           // compass 輸出位置
             sass: 'resources/assets/sass',      // sass 來源路徑
             image: 'resources/assets/images',   // 圖片來源路徑
-            style: 'compressed'                 // CSS 處理方式，預設 nested（expanded, nested, compact, compressed）
+            style: 'compressed',                // CSS 處理方式，預設 nested（expanded, nested, compact, compressed）
             comments: false,                    // 是否要註解，預設(true)
             require: ['susy'],                  // 額外套件 susy
         }));

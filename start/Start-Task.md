@@ -34,11 +34,11 @@ Hello Gulp Default Task
 ### 執行指定的 `other` gulp 工作
 
 ```shell
-$ gulp
+$ gulp other
 [16:44:21] Using gulpfile ~/Code/Project/gulpfile.js
-[16:44:21] Starting 'default'...
+[16:44:21] Starting 'other'...
 Hello Gulp Other Task
-[16:44:21] Finished 'default' after 139 μs
+[16:44:21] Finished 'other' after 139 μs
 ```
 
 
